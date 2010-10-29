@@ -1,0 +1,46 @@
+/* social networking styles */
+div.links ul {margin:10px 0 10px 10px;}
+div.links ul li {margin:5px 0 10px 0;}
+div.links ul li a span {background:transparent url(../includes/images/favicons.gif) no-repeat;padding:1px 5px 2px 16px;}
+option._43things, ._43things a span {background-position:0 -17px !important;}
+option.bebo, .bebo a span {background-position:0 -36px !important;}
+option.catster, .catster a span {background-position:0 -55px !important;}
+option.claimid, .claimid a span {background-position:0 -777px !important;}
+option.delicious, .delicious a span {background-position:0 -74px !important;}
+option.digg, .digg a span {background-position:0 -93px !important;}
+option.dodgeball, .dodgeball a span {background-position:0 -112px !important;}
+option.dogster, .dogster a span {background-position:0 -131px !important;}
+option.dopplr, .dopplr a span {background-position:0 -150px !important;}
+option.facebook, .facebook a span {background-position:0 -169px !important;}
+option.flickr, .flickr a span {background-position:0 -207px !important;}
+option.friendfeed, .friendfeed a span {background-position:0 -188px !important;}
+option.goodreads, .goodreads a span {background-position:0 -226px !important;}
+option.google, .google a span {background-position:0 -245px !important;}
+option.hi5, .hi5 a span {background-position:0 -264px !important;}
+option.jaiku, .jaiku a span {background-position:0 -283px !important;}
+option.audioscrobbler, .audioscrobbler a span,
+option.lastfm, .lastfm a span {background-position:0 -302px !important;}
+option.librarything, .librarything a span {background-position:0 -758px !important;}
+option.linkedin, .linkedin a span {background-position:0 -321px !important;}
+option.lj, .lj a span {background-position:0 -340px !important;}
+option.mog, .mog a span {background-position:0 -359px !important;}
+option.multiply, .multiply a span {background-position:0 -378px !important;}
+option.myspace, .myspace a span {background-position:0 -397px !important;}
+option.newsvine, .newsvine a span {background-position:0 -416px !important;}
+option.ning, .ning a span {background-position:0 -435px !important;}
+option.orkut, .orkut a span {background-position:0 -454px !important;}
+option.pandora, .pandora a span {background-position:0 -473px !important;}
+option.foursquare, .foursquare a span {background-position:0 -492px !important;}
+option.reddit, .reddit a span {background-position:0 -511px !important;}
+option.sonicliving, .sonicliving a span {background-position:0 -530px !important;}
+option.stumbleupon, .stumbleupon a span {background-position:0 -549px !important;}
+option.tabblo, .tabblo a span {background-position:0 -568px !important;}
+option.tagworld, .tagworld a span {background-position:0 -587px !important;}
+option.technorati, .technorati a span {background-position:0 -606px !important;}
+option.tribe, .tribe a span {background-position:0 -625px !important;}
+option.twitter, .twitter a span {background-position:0 -644px !important;}
+option.upcoming, .upcoming a span {background-position:0 -663px !important;}
+option.vox, .vox a span {background-position:0 -682px !important;}
+option.wordpress, .wordpress a span {background-position:0 -701px !important;}
+option.youtube, .youtube a span {background-position:0 -720px !important;}
+option.zooomr, .zooomr a span {background-position:0 -739px !important;}
