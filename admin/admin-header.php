@@ -1,6 +1,7 @@
 <?php if ( !isset($no_login) ) auth_redirect(); ?>
 <html dir="ltr" lang="en">
 	<head>
+	    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
 		<title>Pez: Admin</title>
 		<style type="text/css">@import url(admin.css);</style>
 		<script type="text/javascript" src="../includes/js/jquery-1.2.3.pack.js"></script>
@@ -10,7 +11,7 @@
 	<body>
 		<div id="page">
 			<div id="header">
-				<h1>Pez: Your online personal profile (<a href="../" rel="external">View Site</a>)</h1>
+				<h1>zep</h1> (<a href="../" rel="external">View Site</a>)
 				<ul id="menu">
 					<li class="first<?php if ($_SERVER['SCRIPT_NAME'] == '/pez/admin/profile.php') echo ' current'; ?>"><a href="profile.php">Profile</a></li>
 					<li class="<?php if ($_SERVER['SCRIPT_NAME'] == '/pez/admin/web-sources.php') echo 'current'; ?>"><a href="web-sources.php">Web Data Sources</a></li>

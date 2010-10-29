@@ -17,7 +17,7 @@ a:hover {color:#1d64ad;text-decoration:underline;}
 /* layout styles */
 #page {}
 #header {border-bottom:solid 5px #1a4f85;background-color:#036;color:#e5e5e5;padding:20px;}
-#header h1 {font-family:Georgia,"Times New Roman",Times,serif;font-size:277%;}
+#header h1 {font-family:'Lobster', arial, serif;font-size:277%;}
 #header h1 a {color:#e5e5e5;border-bottom:solid 1px #e5e5e5;font-size:60%;vertical-align:middle;}
 #header h1 a:hover {color:#fff;border-bottom:solid 1px #fff;text-decoration:none;}
 #header ul#menu {position:absolute;top:25px;right:0;padding:10px 20px;height:25px;text-align:right;}
