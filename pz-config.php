@@ -1,6 +1,6 @@
 <?php
 define('ABSPATH', dirname(__FILE__));
-define('PASSWORD', 'password');
+define('PASSWORD', 'enterpassword');
 define('PASS_COOKIE', 'pez_' . md5(PASSWORD));
 
 include_once(ABSPATH . '/includes/classes.php');
