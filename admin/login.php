@@ -23,32 +23,46 @@ if ( isset($_POST['login']) )
 	}
 }
 
-$no_login = true;
-include_once('admin-header.php');
 ?>
-		<h2>Login</h2>
-		<?php do_messages(); ?>
+<html dir="ltr" lang="en">
+	<head>
+	    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<title>zep: admin</title>
+		<style type="text/css">@import url(admin.css);</style>
+		<script type="text/javascript" src="../includes/js/jquery-1.2.3.pack.js"></script>
+		<script type="text/javascript" src="../includes/js/functions.js"></script>
+<?php if ( isset($html_head) ) echo $html_head; ?>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<h1>zep</h1>
+				<ul id="menu">
+					<li class="first">Please enter your password to begin.</li>
+					</ul>
+			</div>
+			<div id="main">
+				<div id="logout">
+					<?php do_messages(); ?>
+				</div>
+				<div id="login">
 		
 		<form name="auth" id="id_auth" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#auth">
 			<fieldset>
-				<legend>Please enter your password to login</legend>
-				<div>
-					<p>We decided against a username/password combination as <?php echo mt_rand(93, 99) . '.' . mt_rand(1, 99); ?>% of the time people just use "admin" as the default username. Since there is only one user required for Pez, there's no point having a username! (So make sure that your password is strong!)</p>
-				</div>
-				<div>
-					<label for="id_password">Password</label>
-					<input type="password" name="password" id="id_password" />
-				</div>
+				<h3>Password:</h3>
+				<input type="password" name="password" id="id_password" />
+				
 				<div>
 					<label for="id_remember">Remember me?</label>
 					<input type="checkbox" name="remember" id="id_remember" class="checkbox" />
 				</div>
 				<div>
 					<input type="hidden" name="redirect_to" id="id_redirect_to" value="<?php echo $_GET['redirect_to']; ?>" />
-					<input type="submit" name="login" id="id_login" value="Login" />
+					<input type="submit" name="login" id="id_login" value="Login" class="save" />
 				</div>
 			</fieldset>
 		</form>
+	</div>
 <?php
 include_once('admin-footer.php');
 ?>
