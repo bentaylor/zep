@@ -4,34 +4,39 @@
 /*fonts.css*/body{font:13px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}pre, code {font:115% monospace;*font-size:100%;}body * {line-height:1.22em;}
 
 /* generic styles */
-body {background-color:#e5e5e5;color:#000;}
+body {background-color:#dddddd;color:#000;}
 a {color:#009;text-decoration:none;}
 a:hover {color:#1d64ad;text-decoration:underline;}
 
-.message-box span {cursor:pointer;display:block;background-color:#e5e5e5;border:solid 3px #ccc;font-weight:bold;margin:10px 50px;padding:10px 35px;text-align:left;}
+.message-box span {cursor:pointer;display:block;background:transparent;border:solid 3px #ccc;font-weight:bold;margin:10px 50px;padding:10px 35px;text-align:left;}
 .message-box .success {border-color:#0c0;background:#e5ffe5 url(../includes/images/accept.png) no-repeat 10px 50%;color:#090;}
 .message-box .error {border-color:#c00;background:#ffe5e5 url(../includes/images/exclamation.png) no-repeat 10px 50%;color:#900;}
 .message-box .warning {border-color:#cc0;background:#ffffe5 url(../includes/images/error.png) no-repeat 10px 50%;color:#990;}
-.message-box .info {border-color:#00c;background:#d0d0ff url(../includes/images/lightbulb_off.png) no-repeat 10px 50%;color:#009;}
+.message-box .info {border-color:transparent;background:transparent url(../includes/images/lightbulb_off.png) no-repeat 10px 50%;color:#009;}
 
 /* layout styles */
 #page {}
-#header {border-bottom:solid 5px #1a4f85;background-color:#036;color:#e5e5e5;padding:20px;}
-#header h1 {font-family:'Lobster', arial, serif;font-size:277%;}
-#header h1 a {color:#e5e5e5;border-bottom:solid 1px #e5e5e5;font-size:60%;vertical-align:middle;}
-#header h1 a:hover {color:#fff;border-bottom:solid 1px #fff;text-decoration:none;}
+#header {border-top:solid 1px #fff;border-bottom:solid 1px #a3c0d6;background: -webkit-gradient(linear, left top, left bottom, from(#e4f2fd), to(#bdd5e7));
+	background: -moz-linear-gradient(top,  #e4f2fd,  #bdd5e7);color:#8caec9;text-shadow: #fff 0px 1px 1px;padding:20px;}
+#header h1 {font-family: 'Lobster', arial, serif;font-size:3em;}
+#header h1 a {color:#8caec9;border-bottom:solid 1px #e5e5e5;font-size:60%;vertical-align:middle;}
+#header h1 a:hover {color:#fff;text-decoration:none;}
 #header ul#menu {position:absolute;top:25px;right:0;padding:10px 20px;height:25px;text-align:right;}
-#header ul#menu li {display:inline;font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;font-size:92%;}
-#header ul#menu li a {background-color:#1a4f85;color:#fff;padding:5px 10px;}
-#header ul#menu li a:hover {background-color:#1d64ad;color:#fff;text-decoration:none;}
-#header ul#menu li.current a {background-color:#e5e5e5;color:#036;}
+#header ul#menu li {display:inline;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
+#header ul#menu li a {text-shadow: #fff 0px 1px 1px;color:#8caec9;padding:5px 10px;}
+#header ul#menu li a:hover {background: rgba(140, 174, 201, 0.3);color:#fff;text-shadow: #8caec9 0px -1px -1px;text-decoration:none;-moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px;-moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px;-webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;border-top-left-radius: 6px; border-top-right-radius: 6px;border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+#header ul#menu li.current a {background: rgba(140, 174, 201, 0.3);color:#fff;text-shadow: #8caec9 0px -1px -1px;text-decoration:none;-moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px;-moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px;-webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;border-top-left-radius: 6px; border-top-right-radius: 6px;border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 
-#main {font-family:Georgia,"Times New Roman",Times,serif;margin:10px 20px;}
-#main h2 {font-size:216%;}
-#main h3 {font-size:154%;margin:10px 0 5px 0;}
+#main {border-top:solid 1px #ebebeb;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
+#main h2 {font-size:2.5em;color:#8caec9;}
+#main h3 {font-size:1.8em;color:#898989;margin:10px 0 5px 0;}
+
+#loginheader {width: 250px;background: transparent;display: block;margin-left: auto;margin-right: auto; padding-top:30px;}
+#login {width: 250px;background:transparent;color:#898989;margin:0 auto;}
+#logout {width:450px;background:transparent;margin:0 auto;}
 
 .column {float:left;width:48%;}
-fieldset {border:solid 1px #ccc;margin:10px 35px 10px 0;padding:10px 15px;}
+fieldset {margin:10px 35px 10px 0;padding:10px 15px;}
 fieldset legend {font-family:Georgia,"Times New Roman",Times,serif;font-size:154%;}
 fieldset div {float:left;clear:both;margin:5px 0;width:100%;}
 fieldset div label {display:block;float:left;width:150px;padding:2px 0;}
@@ -41,6 +46,9 @@ fieldset div textarea {float:left;font-family:Georgia,"Times New Roman",Times,se
 fieldset div select,
 fieldset div input.remove,
 fieldset div input.button,
+fieldset div input.save {border:solid 1px #a3c0d6;font: normal 18px "Helvetica Neue", Arial, sans-serif;background: -webkit-gradient(linear, left top, left bottom, from(#e4f2fd), to(#bdd5e7));
+	background: -moz-linear-gradient(top,  #e4f2fd,  #bdd5e7);color:#8caec9;text-shadow: #fff 0px 1px 1px;width: 80px;height: 30px;display: block;margin: auto;}
+fieldset div input.save:hover{background:#bdd5e7;} 
 fieldset div input.checkbox {width:auto;}
 fieldset div textarea {height:100px;padding:5px 3px;}
 fieldset div textarea.editor {font-family:"Courier New",courier,monospace;height:375px;width:80%;white-space:nowrap;overflow:auto;}
