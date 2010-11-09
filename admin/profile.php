@@ -93,25 +93,24 @@ if ( isset($_POST['form_name']) && $_POST['form_name'] != '' )
 
 include_once('admin-header.php');
 ?>
-		<h2>Profile</h2>
 		<?php do_messages(); ?>
 		
 		<div class="column">
 			<form id="profile" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 				<fieldset>
-					<legend>Personal Details</legend>
+					<legend>Your Personal Details</legend>
 					<input type="hidden" name="form_name" id="id_form_name" value="profile_form" />
 					<div>
 						<label for="id_first_name">First name</label>
-						<input type="text" name="first_name" id="id_first_name" value="<?php echo $profile->first_name; ?>" maxlength="32" />
+						<input type="text" class="text" name="first_name" id="id_first_name" value="<?php echo $profile->first_name; ?>" maxlength="32" />
 					</div>
 					<div>
 						<label for="id_last_name">Middle name</label>
-						<input type="text" name="middle_name" id="id_middle_name" value="<?php echo $profile->middle_name; ?>" maxlength="32" />
+						<input type="text" class="text" name="middle_name" id="id_middle_name" value="<?php echo $profile->middle_name; ?>" maxlength="32" />
 					</div>
 					<div>
 						<label for="id_last_name">Last name</label>
-						<input type="text" name="last_name" id="id_last_name" value="<?php echo $profile->last_name; ?>" maxlength="32" />
+						<input type="text" class="text" name="last_name" id="id_last_name" value="<?php echo $profile->last_name; ?>" maxlength="32" />
 					</div>
 				<?php if ( ($profile->first_name != '') && ($profile->last_name) ) : ?>
 					<div>
@@ -142,11 +141,11 @@ include_once('admin-header.php');
 					</div>
 					<div>
 						<label for="id_location">Location</label>
-						<input type="text" name="location" id="id_location" value="<?php echo $profile->location; ?>" maxlength="32" />
+						<input type="text" class="text" name="location" id="id_location" value="<?php echo $profile->location; ?>" maxlength="32" />
 					</div>
 					<div>
 						<label for="id_country">Country</label>
-						<select name="country" id="id_country">
+						<select name="country" id="id_country" class="select">
 							<option class="select" value="-1">Pick one...</option>
 						<?php foreach ($countries as $code => $country) : ?>
 							<option value="<?php echo $country; ?>"<?php if ($profile->country == $country) echo ' selected="true"'; ?>><?php echo $country; ?></option>
@@ -155,7 +154,7 @@ include_once('admin-header.php');
 					</div>
 					<div>
 						<label for="id_email">Email address</label>
-						<input type="text" name="email" id="id_email" value="<?php echo $profile->email; ?>" />
+						<input type="text" class="text" name="email" id="id_email" value="<?php echo $profile->email; ?>" />
 						<p>Leave this blank if you don't want to publish your email address.</p>
 					</div>
 					<div>
@@ -203,7 +202,7 @@ include_once('admin-header.php');
 					</div>
 					<div>
 						<label for="id_username">Username / User ID</label>
-						<input id="id_username" type="text" name="username" maxlength="32" value="<?php echo (isset($_POST['username'])) ? $_POST['username'] : ''; ?>" />
+						<input id="id_username" type="text" class="text" name="username" maxlength="32" value="<?php echo (isset($_POST['username'])) ? $_POST['username'] : ''; ?>" />
 						<p>Bebo, Facebook? Use the number in the URL of your 'Profile' page (e.g. <?php $rand = rand(100000000, 999999999); echo $rand; ?>)</p>
 					</div>
 					<div><input type="submit" name="save" id="id_save_2" value="Add Social Network" class="button" /></div>
@@ -219,7 +218,7 @@ include_once('admin-header.php');
 					<input type="hidden" name="form_name" id="id_form_name" value="profile_form" />
 					<div>
 						<label for="id_photo_url">Profile Photo URL</label>
-						<input type="text" name="photo_url" id="id_photo_url" value="<?php echo $profile->photo_url; ?>" />
+						<input type="text" class="text" name="photo_url" id="id_photo_url" value="<?php echo $profile->photo_url; ?>" />
 						<p>Enter the URL of your profile image.</p>
 						<?php
 							if ( $profile->photo_url != '' )
@@ -253,11 +252,11 @@ include_once('admin-header.php');
 					<p>For more information about OpenID, please visit <a href="http://openid.net/" rel="external">http://openid.net/</a></p>
 					<div>
 						<label for="id_openid_server">OpenID Server</label>
-						<input type="text" name="openid_server" id="id_openid_server" value="<?php echo $profile->openid_server; ?>" />
+						<input type="text" class="text" name="openid_server" id="id_openid_server" value="<?php echo $profile->openid_server; ?>" />
 					</div>
 					<div>
 						<label for="id_openid_delegate">OpenID Delegate</label>
-						<input type="text" name="openid_delegate" id="id_openid_delegate" value="<?php echo $profile->openid_delegate; ?>" />
+						<input type="text" class="text" name="openid_delegate" id="id_openid_delegate" value="<?php echo $profile->openid_delegate; ?>" />
 					</div>
 					<div><input type="submit" name="save" id="id_save_4" value="Save Changes" class="button" /></div>
 				</fieldset>

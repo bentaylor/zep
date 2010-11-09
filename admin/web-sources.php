@@ -124,7 +124,6 @@ HTML;
 
 include_once('admin-header.php');
 ?>
-		<h2>Web Data Sources</h2>
 		<?php do_messages(); ?>
 		
 		<div class="column">

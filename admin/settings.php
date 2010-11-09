@@ -28,7 +28,6 @@ if ( isset($_POST['save']) )
 
 include_once('admin-header.php');
 ?>
-		<h2>Settings</h2>
 		<?php do_messages(); ?>
 		
 		<form name="settings" id="settings" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#settings">

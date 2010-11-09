@@ -28,26 +28,27 @@ a:hover {color:#1d64ad;text-decoration:underline;}
 #header ul#menu li.current a {background: rgba(140, 174, 201, 0.3);color:#fff;text-shadow: #8caec9 0px -1px -1px;text-decoration:none;-moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px;-moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px;-webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;border-top-left-radius: 6px; border-top-right-radius: 6px;border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 
 #main {border-top:solid 1px #ebebeb;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
-#main h2 {font-size:2.5em;color:#8caec9;}
+#main h2 {font-size:2.5em;color:#fff;margin:10px 0 5px 45px;}
 #main h3 {font-size:1.8em;color:#898989;margin:10px 0 5px 0;}
 
 #loginheader {width: 250px;background: transparent;display: block;margin-left: auto;margin-right: auto; padding-top:30px;}
 #login {width: 250px;background:transparent;color:#898989;margin:0 auto;}
 #logout {width:450px;background:transparent;margin:0 auto;}
 
-.column {float:left;width:48%;}
-fieldset {margin:10px 35px 10px 0;padding:10px 15px;}
-fieldset legend {font-family:Georgia,"Times New Roman",Times,serif;font-size:154%;}
+.column {float:left;font: 15px "Helvetica Neue", Arial, sans-serif;color:#626262;width:48%;}
+fieldset {background:#eaeaea;margin:10px 35px 10px 45px;padding:10px 15px;border-top:1px solid #f3f3f3;}
+fieldset legend {font: 1.3em "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0px 0px 0px -1px;}
 fieldset div {float:left;clear:both;margin:5px 0;width:100%;}
 fieldset div label {display:block;float:left;width:150px;padding:2px 0;}
 fieldset div input,
-fieldset div select,
-fieldset div textarea {float:left;font-family:Georgia,"Times New Roman",Times,serif;width:250px;padding:2px 3px;}
-fieldset div select,
-fieldset div input.remove,
-fieldset div input.button,
+fieldset div select {border:1px solid #c2c2c2;font: normal 14px "Helvetica Neue", Arial, sans-serif;background: #fff;color:#898989;}
+fieldset div textarea {float:left;font-family:"Helvetica Neue", Arial, sans-serif;width:300px;padding:2px 3px;}
+fieldset div input.remove {width:15px;}
+fieldset div input.button{background:#e4f2fd;color:#8caec9;text-shadow: #fff 0px 1px 1px; -moz-border-radius-topleft: 3px;border:1px solid #bdd5e7; -moz-border-radius-topright: 3px;-moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px;-webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px;-webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px;border-top-left-radius: 3px; border-top-right-radius: 3px;border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;padding: 3px 3px 3px 3px;}
+fieldset div input.button:hover{background:#bdd5e7;} 
+fieldset div input.text{border:1px solid #c2c2c2;font-family:"Helvetica Neue", Arial, sans-serif;width:300px;padding:3px 3px;-moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px;-moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px;-webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px;-webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px;border-top-left-radius: 3px; border-top-right-radius: 3px;border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
 fieldset div input.save {border:solid 1px #a3c0d6;font: normal 18px "Helvetica Neue", Arial, sans-serif;background: -webkit-gradient(linear, left top, left bottom, from(#e4f2fd), to(#bdd5e7));
-	background: -moz-linear-gradient(top,  #e4f2fd,  #bdd5e7);color:#8caec9;text-shadow: #fff 0px 1px 1px;width: 80px;height: 30px;display: block;margin: auto;}
+	background: -moz-linear-gradient(top,  #e4f2fd,  #bdd5e7);color:#8caec9;text-shadow: #fff 0px 1px 1px;width: 150px;height: 30px;display: block;margin: auto;}
 fieldset div input.save:hover{background:#bdd5e7;} 
 fieldset div input.checkbox {width:auto;}
 fieldset div textarea {height:100px;padding:5px 3px;}
