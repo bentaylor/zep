@@ -29,13 +29,13 @@ if ( isset($_POST['save']) )
 include_once('admin-header.php');
 ?>
 		<?php do_messages(); ?>
-		
+	<div class="column">
 		<form name="settings" id="settings" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#settings">
 			<fieldset>
 				<legend>Pez Settings</legend>
 				<div>
 					<label for="id_charset">Charset Encoding</label>
-					<input type="text" name="charset" id="id_charset" value="<?php echo $settings->charset; ?>" maxlength="32" />
+					<input type="text" class="text" name="charset" id="id_charset" value="<?php echo $settings->charset; ?>" maxlength="32" />
 					<p>Enter your charset here. (i.e. UTF-8)</p>
 				</div>
 				<div>
@@ -47,12 +47,12 @@ include_once('admin-header.php');
 				</div>
 				<div>
 					<label for="id_date_format">Date Format</label>
-					<input type="text" name="date_format" id="id_date_format" value="<?php echo $settings->date_format; ?>" />
+					<input type="text" class="text" name="date_format" id="id_date_format" value="<?php echo $settings->date_format; ?>" />
 					<p><a href="http://uk2.php.net/date" rel="external">Documentation on date formatting.</a></p>
 				</div>
 				<div>
 					<label for="id_google_analytics">Google Analytics</label>
-					<input type="text" name="google_analytics" id="id_google_analytics" value="<?php echo $settings->google_analytics; ?>" />
+					<input type="text" class="text" name="google_analytics" id="id_google_analytics" value="<?php echo $settings->google_analytics; ?>" />
 					<p>Set your Google Analytics ID here.</p>
 				</div>
 				<div>
@@ -71,6 +71,7 @@ include_once('admin-header.php');
 				<div><input type="submit" name="save" id="id_save_1" value="Save Changes" class="button" /></div>
 			</fieldset>
 		</form>
+	</div>	
 <?php
 include_once('admin-footer.php');
 ?>

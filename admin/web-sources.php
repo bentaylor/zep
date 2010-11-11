@@ -124,6 +124,7 @@ HTML;
 
 include_once('admin-header.php');
 ?>
+
 		<?php do_messages(); ?>
 		
 		<div class="column">
@@ -134,11 +135,11 @@ include_once('admin-header.php');
 					<input type="hidden" name="form_name" id="id_form_name" value="wds_form" />
 					<div>
 						<label for="id_source_title">Title</label>
-						<input id="id_source_title" type="text" name="source_title" maxlength="32" value="" />
+						<input id="id_source_title" type="text" class="text" name="source_title" maxlength="32" value="" />
 					</div>
 					<div>
 						<label for="id_source_url">URL</label>
-						<input id="id_source_url" type="text" name="source_url" maxlength="255" value="" />
+						<input id="id_source_url" type="text"  class="text" name="source_url" maxlength="255" value="" />
 					</div>
 					<div><input type="submit" name="save" id="id_save_1" value="Add Web Data Source" class="button" /></div>
 				</fieldset>
@@ -176,7 +177,7 @@ include_once('admin-header.php');
 		
 		<div class="column">
 			<fieldset>
-				<legend>Add Feeds to Modules</legend>
+				<legend>Click and Drag Feeds to Modules</legend>
 				
 				<div id="feed-sources">
 					<?php echo source_list(true, true); ?>
@@ -189,7 +190,7 @@ include_once('admin-header.php');
 							<?php echo blog_list(false, true); ?>
 						</div>
 						<div id="tweet" class="drop">
-							<h3>Status Module</h3>
+							<h3>Twitter Module</h3>
 							<?php echo tweet_list(false, true); ?>
 						</div>
 						<div id="bookmarks" class="drop">
@@ -212,7 +213,7 @@ include_once('admin-header.php');
 					
 					<div>
 						<input type="hidden" name="form_name" id="id_form_name" value="modules_form" />
-						<input type="submit" name="save" id="id_save_3" value="Save" />
+						<input type="submit" class="button" name="save" id="id_save_3" value="Save" />
 					</div>
 					
 				</form>

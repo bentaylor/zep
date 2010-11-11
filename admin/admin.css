@@ -28,16 +28,21 @@ a:hover {color:#1d64ad;text-decoration:underline;}
 #header ul#menu li.current a {background: rgba(140, 174, 201, 0.3);color:#fff;text-shadow: #8caec9 0px -1px -1px;text-decoration:none;-moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px;-moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px;-webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;border-top-left-radius: 6px; border-top-right-radius: 6px;border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 
 #main {border-top:solid 1px #ebebeb;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
-#main h2 {font-size:2.5em;color:#fff;margin:10px 0 5px 45px;}
+#main h2 {font-size:2.7em;color:#fff;margin:10px 0 5px 0px;}
 #main h3 {font-size:1.8em;color:#898989;margin:10px 0 5px 0;}
 
+/* login page */
 #loginheader {width: 250px;background: transparent;display: block;margin-left: auto;margin-right: auto; padding-top:30px;}
 #login {width: 250px;background:transparent;color:#898989;margin:0 auto;}
 #logout {width:450px;background:transparent;margin:0 auto;}
 
+/* dashboard */
+.content-module {width: 440px;font:15px "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0 auto;}
+.content-module img {background-color: #f3f3f3;border-top: 1px solid #fff;border-right: 1px solid rgba(233,233,233,.7);border-left: 1px solid rgba(233,233,233,.7);border-bottom: 1px solid rgba(196,196,196,.35);	padding: 05px;}
+
 .column {float:left;font: 15px "Helvetica Neue", Arial, sans-serif;color:#626262;width:48%;}
-fieldset {background:#eaeaea;margin:10px 35px 10px 45px;padding:10px 15px;border-top:1px solid #f3f3f3;}
-fieldset legend {font: 1.3em "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0px 0px 0px -1px;}
+fieldset {background:#eaeaea;margin:10px 35px 10px 45px;padding:10px 15px;border-right:1px solid #d1d1d1;border-bottom:1px solid #f7f7f7;border-top:1px solid #d1d1d1;border-left:1px solid #d1d1d1;}
+fieldset legend {background:transparent;font: 1.3em "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0px 0px 0px -1px;}
 fieldset div {float:left;clear:both;margin:5px 0;width:100%;}
 fieldset div label {display:block;float:left;width:150px;padding:2px 0;}
 fieldset div input,
@@ -69,7 +74,7 @@ select#id_network_id option.select, select#id_service_id option.select {backgrou
 
 form#modules {float:left;margin-left:1%;width:68%;}
 form#modules .drop-boxes {float:left;margin-top:0;}
-.drop {float:left;background-color:#fff;border:solid 1px #ccc;padding:5px;}
+.drop {float:left;background-color:#fff;border:solid 1px #ccc;padding:5px; }
 .droppable-active {background-color:#efefcc;}
 .droppable-hover {background-color:#ccefcc;}
 .drop ul {list-style:none;margin:0;padding:0;}
