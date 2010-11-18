@@ -27,7 +27,7 @@ if ( isset($_POST['login']) )
 <html dir="ltr" lang="en">
 	<head>
 	    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
-		<title>zep: admin</title>
+		<title>pez: admin</title>
 		<style type="text/css">@import url(admin.css);</style>
 		<script type="text/javascript" src="../includes/js/jquery-1.2.3.pack.js"></script>
 		<script type="text/javascript" src="../includes/js/functions.js"></script>
@@ -36,7 +36,7 @@ if ( isset($_POST['login']) )
 	<body>
 		<div id="page">
 			<div id="header">
-				<h1>zep</h1>
+				<h1>pez</h1>
 				<ul id="menu">
 					<li class="first">Please enter your password to begin.</li>
 					</ul>
@@ -46,23 +46,15 @@ if ( isset($_POST['login']) )
 					<?php do_messages(); ?>
 				</div>
 				<div id="login">
-		
-		<form name="auth" id="id_auth" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#auth">
-			<fieldset>
-				<h3>Password:</h3>
-				<input type="password" name="password" id="id_password" />
-				
-				<div>
-					<label for="id_remember">Remember me?</label>
-					<input type="checkbox" name="remember" id="id_remember" class="checkbox" />
-				</div>
-				<div>
-					<input type="hidden" name="redirect_to" id="id_redirect_to" value="<?php echo $_GET['redirect_to']; ?>" />
-					<input type="submit" name="login" id="id_login" value="Login" class="save" />
-				</div>
-			</fieldset>
-		</form>
-	</div>
+					<form name="auth" id="id_auth" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#auth">
+						<h3>Password</h3>
+						<input type="password" name="password" class="password" /><br>
+						<input type="checkbox" name="remember" id="id_remember" class="checkbox" /> <label for="id_remember">Remember me?</label>
+						<input type="hidden" name="redirect_to" id="id_redirect_to" value="<?php echo $_GET['redirect_to']; ?>" />
+						<input type="submit" name="login" value="Login" class="save" />
+					</form>
+				</div>	
+			</div>
 <?php
 include_once('admin-footer.php');
 ?>
