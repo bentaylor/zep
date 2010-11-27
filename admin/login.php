@@ -4,7 +4,7 @@ require_once('../pz-config.php');
 if ( isset($_GET['logout']) && $_GET['logout'] == 'true' )
 {
 	setcookie(PASS_COOKIE, '', time() - 31536000);
-	$messages[] = array('info', 'You have been logged out.');
+	$messages[] = array('info', 'You have been logged out. Cheers!');
 }
 
 if ( isset($_POST['login']) )
@@ -35,11 +35,8 @@ if ( isset($_POST['login']) )
 	</head>
 	<body>
 		<div id="page">
-			<div id="header">
+			<div id="header-login">
 				<h1>pez</h1>
-				<ul id="menu">
-					<li class="first">Please enter your password to begin.</li>
-					</ul>
 			</div>
 			<div id="main">
 				<div id="logout">
