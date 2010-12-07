@@ -4,7 +4,7 @@
 /*fonts.css*/body{font:13px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}pre, code {font:115% monospace;*font-size:100%;}body * {line-height:1.22em;}
 
 /* generic styles */
-body {background-color:#dddddd;color:#000;}
+body {background-color:#f5f5f5;color:#000;}
 a {color:#009;text-decoration:none;}
 a:hover {color:#1d64ad;text-decoration:underline;}
 
@@ -22,14 +22,14 @@ a:hover {color:#1d64ad;text-decoration:underline;}
 	background: -moz-linear-gradient(top,  #e4f2fd,  #bdd5e7);color:#8caec9;text-shadow: #fff 0px 1px 1px;}
 #header h1 {font-family: 'Lobster', arial, serif;font-size:2.5em;padding:0px 0px 0px 25px;}
 
-ul#menu {background:#d2d2d2;border-top:solid 1px #a3c0d6;border-bottom:solid 1px #c7c7c7;padding:05px 10px;height:21px;text-align:left;}
+ul#menu {background:#d8d7d7;border-top:solid 1px #a3c0d6;border-bottom:solid 1px #c7c7c7;padding:05px 10px;height:21px;text-align:left;}
 ul#menu li {display:inline;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
 ul#menu li a {text-shadow: #bebebe 0px -1px -1px;color:#fff;padding:5px 11px;}
 ul#menu li a:hover {background: rgba(140, 174, 201, 0.2);text-shadow: #bebebe 0px -1px -1px;text-decoration:none;}
 ul#menu li.current a {background: rgba(140, 174, 201, 0.2);color:#fff;text-shadow: #bebebe 0px -1px -1px;text-decoration:none;border-radius: 6px;}
 
-#main {border-top:solid 1px #ebebeb;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
-#main h2 {font-size:2.7em;color:#fff;margin:10px 0 5px 0px;}
+#main {border-top:solid 1px #fff;font: normal 18px "Helvetica Neue", Arial, sans-serif;}
+#main h2 {font-size:2.7em;color:#76829a;margin:10px 0 5px 0px;}
 #main h3 {font-size:1.2em;color:#898989;margin:10px 0 5px 0;}
 
 /* login page */
@@ -46,10 +46,16 @@ ul#menu li.current a {background: rgba(140, 174, 201, 0.2);color:#fff;text-shado
 .content-module {width: 440px;font:15px "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0 auto;}
 .content-module img {background-color: #f3f3f3;border-top: 1px solid #fff;border-right: 1px solid rgba(233,233,233,.7);border-left: 1px solid rgba(233,233,233,.7);border-bottom: 1px solid rgba(196,196,196,.35);	padding: 05px;}
 
-.column {float:left;font: 15px "Helvetica Neue", Arial, sans-serif;color:#626262;width:48%;}
-fieldset {background:#eaeaea;margin:10px 35px 10px 60px;padding:10px 15px;border-right:1px solid #d1d1d1;border-bottom:1px solid #f7f7f7;border-top:1px solid #d1d1d1;border-left:1px solid #d1d1d1;}
+.column {float:right;font: 15px "Helvetica Neue", Arial, sans-serif;color:#626262;width:70%;}
+ul#subnav {float:left;font: 15px "Helvetica Neue", Arial, sans-serif;color:#626262;width:10%;}
+ul#subnav li {background:transparent;list-style: none;display:list-item;width:200px;height:30px;}
+ul#subnav li a {font: bold 18px "Helvetica Neue", Arial, sans-serif;text-decoration:none; color:#9d9d9c;text-shadow: #fff 0px 1px 1px;}
+ul#subnav li a:hover {color:#76829a;}
+ul#subnav li.active a {color:#76829a;}
+.add {font: bold 25px "Helvetica Neue", Arial, sans-serif;color:#76829a;text-shadow: #fff 0px 1px 1px;}
+fieldset {width:500px;margin:10px 35px 10px 30px;padding:10px 15px;}
 fieldset legend {background:transparent;font: 1.3em "Helvetica Neue", Arial, sans-serif;color:#626262;margin:0px 0px 0px -1px;}
-fieldset div {float:left;clear:both;margin:5px 0;width:100%;}
+fieldset div {float:right;clear:both;margin:5px 0;width:100%;}
 fieldset div label {display:block;float:left;width:150px;padding:2px 0;}
 fieldset div input,
 fieldset div select {border:1px solid #c2c2c2;font: normal 14px "Helvetica Neue", Arial, sans-serif;background: #fff;color:#898989;}
@@ -89,9 +95,9 @@ form#modules .drop-boxes {float:left;margin-top:0;}
 .drop ul li.item a span {background:transparent url(../includes/images/favicons.gif) no-repeat 0 0;padding:0 5px 2px 16px;}
 .drop ul li a.remove {float:right;display:block;background:#fff url(../includes/images/cross.png) no-repeat left 50%;margin-top:2px;width:16px;text-indent:-9999px;outline:none;}
 
-form#add-network .networks {margin:-150px 0 0 420px;border:solid 1px #ccc;padding:5px 3px;width:120px;}
+form#add-network .networks {border:solid 1px #ccc;padding:5px 3px;width:100%;}
 form#add-network .networks ul.profiles {}
-form#add-network .networks ul.profiles li {float:left;clear:both;margin:0 0 5px 0;width:100%;}
-form#add-network .networks ul.profiles li a {float:left;padding:2px;}
-form#add-network .networks ul.profiles li input.remove {float:right;}
+form#add-network .networks ul.profiles li {clear:both;margin:0 0 5px 0;width:100%;}
+form#add-network .networks ul.profiles li a {padding:2px;}
+form#add-network .networks ul.profiles li input.remove {}
 form .photo img {border:solid 1px #ccc;padding:3px;}
