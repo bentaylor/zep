@@ -60,7 +60,7 @@ class Profile extends Persistent
 	var $first_name;
 	var $middle_name;
 	var $last_name;
-	var $display_name;
+	var $adjectives;
 	var $blurb;
 	var $location;
 	var $country;
