@@ -25,13 +25,13 @@ if ( isset($_POST['form_name']) && $_POST['form_name'] != '' )
 			
 			if ( isset($_POST['last_name']) && $_POST['last_name'] != '')
 				$profile->last_name = $_POST['last_name'];
-			
-			if ( isset($_POST['display_name']) && $_POST['display_name'] != '-1')
-				$profile->display_name = $_POST['display_name'];
-			
+						
 			if ( isset($_POST['blurb']) && $_POST['blurb'] != '')
-				$profile->blurb = $_POST['blurb'];
+				$profile->blurb = stripslashes($_POST['blurb']);
 			
+			if ( isset($_POST['adjectives']) && $_POST['adjectives'] != '')
+				$profile->adjectives = $_POST['adjectives'];
+
 			if ( isset($_POST['location']) && $_POST['location'] != '')
 				$profile->location = $_POST['location'];
 			
@@ -71,7 +71,6 @@ include_once('admin-header.php');
 		<li class="active"><a href="profile.php"><span class="add">+</span> Personal Details</a></li>
 		<li><a href="avatar.php"><span class="add">+</span> Avatar</a></li>
 		<li><a href="social.php"><span class="add">+</span> Social Networks</a></li>
-		<li><a href="openid.php"><span class="add">+</span> Open ID</a></li>
 		</fieldset>
 		</ul>
 		<div class="column">
@@ -92,8 +91,12 @@ include_once('admin-header.php');
 					</div>
 					<div>
 						<label for="id_blurb">Short blurb about me</label>
-						<textarea name="blurb" id="id_blurb" rows="3" cols="40"><?php echo $profile->blurb; ?></textarea>
+						<textarea name="blurb" id="id_blurb" rows="3" cols="40"><?php echo stripslashes($profile->blurb); ?></textarea>
 						<p>This is a paragraph sized description of you that appears at the top of the page. Remember to use paragraph and break tags.</p>
+					</div>
+					<div>
+						<label for="id_last_name">Adjectives</label>
+						<input type="text" class="text" name="adjectives" id="adjectives" value="<?php echo $profile->adjectives; ?>" maxlength="140" />
 					</div>
 					<div>
 						<label for="id_location">Location</label>

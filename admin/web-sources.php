@@ -131,7 +131,8 @@ include_once('admin-header.php');
 			<form name="add-source" id="add-source" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#add-source">
 				<fieldset>
 					<legend>Add a Personal Feed (Atom/RSS feed)</legend>
-					<p>This section is to list all of your personal feeds that you want to use within Pez. You can add any Atom and RSS feeds that you like, with no restrictions.</p>
+					<p>This section is to list all of your personal feeds that you want to use within Pez. You can add any Atom and RSS feeds that you like, with no restrictions.</p><br>
+					<p>Please keep in mind that some services offer a private RSS feed (like Foursquare), so any information you submit to the service as private can show up on your Pez profile page as public. Pez does not inherit your privacy settings.</p>
 					<input type="hidden" name="form_name" id="id_form_name" value="wds_form" />
 					<div>
 						<label for="id_source_title">Title</label>
