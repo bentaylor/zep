@@ -4,11 +4,11 @@
 /*fonts.css*/body{font:13px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}pre, code {font:115% monospace;*font-size:100%;}body * {line-height:1.22em;}
 
 /* generic styles */
-body {background-color:#DBDBDB;font-family:"Helvetica Neue",helvetica,arial,sans-serif;}
+body {background-color:#e6e6e6;font-family:"Helvetica Neue",helvetica,arial,sans-serif;}
 p {text-align: justify;}
 
-h1 {font-weight:bold;font-size:3em;color:#fff; float:left;margin:20px 0px 0px;padding:0px 0px 0;}
-h2 {font:normal 1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:bold;color:#B1B1B1;margin:0 -8px 10px;padding:0 0 0 5px;}
+h1 {font:3em "Helvetica Neue", Helvetica, Arial, sans-serif;color:#959595;margin:0px 0px 0px;padding:0px 0px 0;}
+h2 {font:normal 1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;color:#B1B1B1;margin:0 -8px 10px;padding:0 0 0 5px;}
 h3 {letter-spacing:1px;margin-bottom:0;color:#7D775C;}
 
 a, a:link {font-weight:normal;line-height:1.1em;text-decoration:none;color:#939191;}
@@ -20,19 +20,19 @@ ul.accessibility {display:none;visibility:hidden;}
 .clear {clear:both;}
 
 /* layout styles */
-#page {text-align:left;width:600px;color:#000;margin:0 auto;padding:0;}
+#page {text-align:left;width:900px;color:#000;margin:0 auto;padding:0;}
 #header {float:relative;width:100%;font-weight:bold;color:#fff;margin:10px 24px 05px;}
-#main {width:600px;float:right;margin:0px 0px 0px;padding:0px 0px 0px;}
+#main {width:555px;float:right;margin:0px 0px 0px;padding:0px 0px 0px;}
 
 .module {
 	width: 100%;
 	background-color: #fff;
 	text-align:left;
-	font:0.9em Arial, sans-serif;
+	font:1em "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height:1.2em;
 	border-top: 1px solid #d4d4ce;
 	border-right: 1px solid #d4d4ce;
-    border-left: 1px solid #C3C3B4;
+    border-left: 1px solid #d4d4ce;
 	border-bottom:1px solid #C3C3B4;
 	color:#706C6C;
 	margin:05px 24px 05px;
@@ -45,21 +45,21 @@ ul.accessibility {display:none;visibility:hidden;}
 	}
 
 .module-content.photos {
+	background:transparent;
 	margin:0 5px 0px;
 	padding:0 0 0;
 	}
 	
 #about {}
 #blogs {}
-#status {}
 #photos {}
 
 #photos img {
 	position: relative;
 	background-color: #fff;
-	border-top: 1px solid #e4e4e4;
-	border-right: 1px solid #e4e4e4;
-	border-left: 1px solid #C3C3B4;
+	border-top: 1px solid #d4d4ce;
+	border-right: 1px solid #d4d4ce;
+	border-left: 1px solid #d4d4ce;
 	border-bottom: 1px solid #C3C3B4;
 	margin: 0 3px 3px;
 	padding: 6px;
@@ -67,15 +67,13 @@ ul.accessibility {display:none;visibility:hidden;}
 
 #bookmarks {}
 #music {}
-#location {}
 #profiles {}
 #profiles li {float:left;padding-right:8px;}
 
 #profile-photo {
-	float:right;
+	float:left;
 	background: #fff;
-	width: 75px;
-	margin: 0px -17px 0px;
+	margin: 10px 0px 0px;
     padding:0px 0 0px;
 	}
 
@@ -87,7 +85,7 @@ ul.accessibility {display:none;visibility:hidden;}
 	border-right: 1px solid #d4d4ce;
 	border-left: 1px solid #C3C3B4;
 	border-bottom: 1px solid #C3C3B4;
-	padding: 6px;
+	padding: 9px;
 	}
 
 #footer {

@@ -41,7 +41,7 @@ $fullname = $profile->first_name . ' ' . $profile->last_name;
 			</ul>
 			
 			<div id="header" class="vcard">
-				<h1><span class="fn"><?php echo $fullname; ?></span></h1>
+				<h1><span class="fn"><?php echo $fullname; ?></span></h1><br>
 				<div id="profile-photo"><img src="<?php echo $profile->photo_url; ?>" alt="[Profile photo for <?php echo $fullname; ?>]" title="Profile photo for <?php echo $fullname; ?>" class="photo" /></div>
 			</div>
 			<div id="main">
@@ -49,7 +49,7 @@ $fullname = $profile->first_name . ' ' . $profile->last_name;
 				<div id="content">
 									
 					<div id="about" class="module">
-						<h2 class="module-header"><span>What I'm About</span></h2>
+						<h2 class="module-header"><span><i><?php echo $profile->adjectives; ?></i></span></h2>
 						<p class="module-content"><span><?php echo $profile->blurb; ?></span></p>
 					</div>
 						

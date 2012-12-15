@@ -45,7 +45,6 @@ include_once('admin-header.php');
 		<li><a href="profile.php"><span class="add">+</span> Personal Details</a></li>
 		<li class="active"><a href="avatar.php"><span class="add">+</span> Avatar</a></li>
 		<li><a href="social.php"><span class="add">+</span> Social Networks</a></li>
-		<li><a href="openid.php"><span class="add">+</span> Open ID</a></li>
 		</fieldset>
 		</ul>
 		<div class="column">
