@@ -1,1 +1,0 @@
-<?php // a:6:{s:7:"charset";s:5:"UTF-8";s:9:"max_items";s:1:"3";s:11:"date_format";s:5:"M j Y";s:16:"google_analytics";s:0:"";s:12:"tagspace_url";s:28:"http://technorati.com/tag/%s";s:8:"filename";s:68:"/homepages/10/d197867378/htdocs/bogd/zep/pez/admin/data/settings.php";} ?>
