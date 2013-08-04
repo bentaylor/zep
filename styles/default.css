@@ -22,7 +22,7 @@ ul.accessibility {display:none;visibility:hidden;}
 /* layout styles */
 #page {text-align:left;width:900px;color:#000;margin:0 auto;padding:0;}
 #header {float:relative;width:100%;font-weight:bold;color:#fff;margin:10px 24px 05px;}
-#main {width:555px;float:right;margin:0px 0px 0px;padding:0px 0px 0px;}
+#main {width:100%px;float:relative;margin:0px 0px 0px;padding:0px 0px 0px;}
 
 .module {
 	width: 100%;
@@ -36,7 +36,7 @@ ul.accessibility {display:none;visibility:hidden;}
 	border-bottom:1px solid #C3C3B4;
 	color:#706C6C;
 	margin:05px 24px 05px;
-	padding:05px 15px 10px;
+	padding:05px 09px 10px;
 	}
 
 .module-content.items {
@@ -53,6 +53,15 @@ ul.accessibility {display:none;visibility:hidden;}
 #about {}
 #blogs {}
 #photos {}
+#profilephoto {
+	height: 400px;
+	border-top: 0px solid #d4d4ce;
+	border-right: 0px solid #d4d4ce;
+    border-left: 0px solid #d4d4ce;
+	border-bottom:0px solid #C3C3B4;
+	padding:0px 0px 10px;
+	}
+}
 
 #photos img {
 	position: relative;

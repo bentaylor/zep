@@ -12,7 +12,7 @@ if (!class_exists('WebDataSources'))
 $data_sources = new WebDataSources();
 $fullname = $profile->first_name . ' ' . $profile->last_name;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
 	<head profile="http://gmpg.org/xfn/11">
 		<title>Pez: <?php echo $fullname; ?></title>
@@ -42,12 +42,13 @@ $fullname = $profile->first_name . ' ' . $profile->last_name;
 			
 			<div id="header" class="vcard">
 				<h1><span class="fn"><?php echo $fullname; ?></span></h1><br>
-				<div id="profile-photo"><img src="<?php echo $profile->photo_url; ?>" alt="[Profile photo for <?php echo $fullname; ?>]" title="Profile photo for <?php echo $fullname; ?>" class="photo" /></div>
 			</div>
 			<div id="main">
 				<a name="skip"></a>
 				<div id="content">
-									
+					<div id="profilephoto" class="module">
+						<img src="<?php echo $profile->photo_url; ?>" alt="[Profile photo for <?php echo $fullname; ?>]" title="Profile photo for <?php echo $fullname; ?>" class="photo" />
+					</div>				
 					<div id="about" class="module">
 						<h2 class="module-header"><span><i><?php echo $profile->adjectives; ?></i></span></h2>
 						<p class="module-content"><span><?php echo $profile->blurb; ?></span></p>

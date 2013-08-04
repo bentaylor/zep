@@ -26,8 +26,8 @@ if ( isset($_POST['login']) )
 ?>
 <html dir="ltr" lang="en">
 	<head>
-	    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
-		<title>pez: admin</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	       <title>pez: admin</title>
 		<style type="text/css">@import url(admin.css);</style>
 		<script type="text/javascript" src="../includes/js/jquery-1.2.3.pack.js"></script>
 		<script type="text/javascript" src="../includes/js/functions.js"></script>

@@ -16,7 +16,7 @@ a:hover {color:#1d64ad;text-decoration:underline;}
 
 /* layout styles */
 #page {}
-#header {height:39px;border-top:solid 1px #5cadd6;border-bottom:solid 1px #004078;background: #1c79fa;}
+#header {height:39px;border-top:solid 1px #5cadd6;border-bottom:solid 1px #195386;background: #2a97f0;}
 #header h1 {font-family: 'Lobster', cursive; font-size:2em; color:#fff; text-shadow: #3cbeff 0px 1px 1px; padding:0px 0px 0px 25px;}
 
 ul#menu {background:#adadad;border-top:solid 1px #828282;border-bottom:solid 1px #adadad;padding:05px 10px;height:21px;text-align:left;}
@@ -30,7 +30,7 @@ ul#menu li.current a {background: rgba(140, 174, 201, 0.2);color:#fff;text-shado
 #main h3 {font-size:1.2em;color:#898989;margin:10px 0 5px 0;}
 
 /* login page */
-#header-login {border-top:solid 1px #5cadd6;border-bottom:solid 1px #004078;background:#1c79fa;padding:20px;}
+#header-login {border-top:solid 1px #5cadd6;border-bottom:solid 1px #195386;background:#2a97f0;padding:20px;}
 #header-login h1 {font-family: 'Lobster', cursive; font-size:4em;font-weight: 400;color:#fff;}
 #login {width:300px;background:transparent;color:#898989;margin-left: auto;margin-right: auto;}
 #login input.save {border:solid 1px #adadad;font: normal 18px "Helvetica Neue", Arial, sans-serif;background: #c3c3c3;color:#fff;width: 150px;height: 30px;display: block; margin-top:7px;border-radius: 6px;text-shadow: #949494 0px -1px -1px; -webkit-transition: background 0.3s ease;}
